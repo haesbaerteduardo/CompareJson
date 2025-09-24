@@ -2,12 +2,12 @@ package processor
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"strings"
 )
 
 func ExtractIDs(filename string) (map[string]bool, error) {
-	data, err := ioutil.ReadFile(filename)
+	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
