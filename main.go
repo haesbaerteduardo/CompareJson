@@ -11,7 +11,7 @@ import (
 
 func main() {
 	if len(os.Args) < 3 {
-		fmt.Println("Usage: go run compare.go <file1.json> <file2.json>")
+		fmt.Println("Usage: go run main.go <file1.json> <file2.json>")
 		os.Exit(1)
 	}
 
